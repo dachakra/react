@@ -35,7 +35,6 @@
       release: "%REACT_APP_RELEASE%",
       environment: "%REACT_APP_ENVIRONMENT%",
       beforeSend(event) {
-        // console.log(event)
         // Check if it is an exception, if so, show the report dialog
         if (event.exception) {
           Sentry.showReportDialog();
